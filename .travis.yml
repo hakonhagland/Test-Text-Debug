@@ -1,0 +1,7 @@
+language: perl
+perl:
+  - "5.30"
+  - "5.28"
+before_install:
+  - sudo apt-get update -qq
+script: "perl Makefile.PL && make disttest"
